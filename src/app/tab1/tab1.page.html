@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: #0b0b0b;">
+    <ion-title style="color: yellow;">
+      ยอดฝาก
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-title class="font">ยอดเงินรวม</ion-title>
+    <ion-title class="font"> {{sum}}</ion-title>
+  </ion-card>
+
+  <ion-button color="warning" expand="block" (click)="gotoShopPage()">ครึ่ง สลึง</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop1Page()">หนึ่ง สลึง </ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop2Page()">สอง สลึง</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop3Page()">1 บาท</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop4Page()">2 บาท</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop5Page()">3 บาท</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop6Page()">4 บาท</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop7Page()">5 บาท</ion-button>
+  <ion-button color="warning" expand="block" (click)="gotoShop8Page()">10 บาท</ion-button>
+
+</ion-content>

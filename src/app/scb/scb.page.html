@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar style="--background: #0b0b0b;">
+
+    <ion-buttons slot="start" (click)="backtotamraikanpage()">
+      <!-- <ion-icon class="icon" name="chevron-back-outline"></ion-icon> -->
+      <ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon>
+    </ion-buttons>
+
+    <ion-title style="color:rgb(254, 254, 0) ;" class="label">โอนเงิน</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content style="--background: #303030;">
+
+  <div class="ion-margin-top" align="center">
+    <img src="assets\img1\logon.png" width="130" height="130">
+  </div>
+  <!-- ต้องเปลียนรูป -->
+  <ion-item style="--background: #f1fd04;">
+    <img [src]="bankInfo.imgbank" height="40" slot="start">
+    <ion-label style="color: rgb(189, 5, 189);" class="font">{{bankInfo.bankname}}</ion-label>
+  </ion-item>
+
+  <ion-label class="label" position="stacked">กรอกจำนวนเงิน(บาท)</ion-label>
+  <form #addMembersForm="ngForm" (ngSubmit)="addData(addMembersForm.value); addMembersForm.reset();">
+    <ion-input class="custom" name="monney" type="text" ngModel required></ion-input>
+    <ion-button class="submit" type="submit" expand="100%" shape="round" (click)="gotoUpdatetab2Page()">
+      ยื่นยัน
+    </ion-button>
+  </form>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="--background: #0b0b0b;">
+    <ion-title style="color:rgb(254, 254, 0);">
+      ประวัติการออม
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background: linear-gradient(180deg, #101010, #386262);">
+
+  <ion-card *ngFor="let document of documents">
+    <ion-card-title class="font">เลขที่บิลออม: {{document.billId}}</ion-card-title>
+    <ion-card-content>
+      <ion-label class="font">
+        <p>วันที่ทำรายการ: {{document.date | date: 'yyyy-MM-dd'}} </p>
+        <p>จำนวนเงิน: {{document.monney}} บาท </p>
+        <p>ชื่อ: {{document.member}} </p>
+      </ion-label>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

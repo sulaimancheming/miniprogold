@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar style="--background: #0b0b0b;">
+    <ion-title style="color:rgb(254, 254, 0) ;">
+      ทำรายการ
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="backg">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ทำรายการ</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="ion-margin-top" align="center">
+    <!-- <img src="assets\bank\Group 8.png" width="40%" height="80"> -->
+    <img src="assets\img1\logon.png " width="130" height="130">
+  </div>
+
+  <ion-buttons (click)="gotobankpage('scb','assets\\bank\\img-ico-scb-removebg-preview 1.png')">
+    <ion-card class="bank">
+      <div align="left">
+        <img src="assets\bank\img-ico-scb-removebg-preview 1.png" height="50">
+      </div>
+      <div>
+        <div style="color: rgb(187, 0, 255);">ธนาคารไทยพาณิช</div>
+        <div style="color: black;">7042871809</div>
+        <div style="color: black;">ห้างทองอนิกา</div>
+      </div>
+    </ion-card>
+  </ion-buttons>
+
+  <ion-buttons (click)="gotobankpage('ktb','assets\\bank\\3be97dfae4ed9e654ef9cb8a5e17c483-removebg-preview 1.png')">
+    <ion-card class="bank">
+      <div align="left">
+        <img src="assets\bank\3be97dfae4ed9e654ef9cb8a5e17c483-removebg-preview 1.png" height="50">
+      </div>
+      <div>
+        <div style="color: rgb(0, 166, 255);">ธนาคารกรุงไทย</div>
+        <div style="color: black;">7035241601</div>
+        <div style="color: black;">ห้างทองอนิกา</div>
+      </div>
+    </ion-card>
+  </ion-buttons>
+
+  <ion-buttons (click)="gotobankpage('bkb','assets\\bank\\download-removebg-preview (2) 1.png')">
+    <ion-card class="bank">
+      <div align="left">
+        <img src="assets\bank\download-removebg-preview (2) 1.png" height="50">
+      </div>
+      <div>
+        <div style="color: rgb(86, 22, 237);">ธนาคารกรุงเทพ</div>
+        <div style="color: black;">7019511371</div>
+        <div style="color: black;">ห้างทองอนิกา</div>
+      </div>
+    </ion-card>
+  </ion-buttons>
+
+  <ion-buttons (click)="gotobankpage('kb','assets\\bank\\download-removebg-preview (1) 1.png')">
+    <ion-card class="bank">
+      <div align="left">
+        <img src="assets\bank\download-removebg-preview (1) 1.png" height="50">
+      </div>
+      <div>
+        <div style="color: rgb(8, 187, 41);">ธนาคารกสิกรไทย</div>
+        <div style="color: black;">7919511719</div>
+        <div style="color: black;">ห้างทองอนิกา</div>
+      </div>
+    </ion-card>
+  </ion-buttons>
+</ion-content>

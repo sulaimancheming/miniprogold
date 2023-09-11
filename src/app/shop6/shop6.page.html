@@ -1,0 +1,68 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>shop6</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+</ion-content> -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>4 บาท</ion-title>
+    <ion-buttons slot="start" (click)="gotoTab1Page()">
+      <ion-icon size="large" name="arrow-back-circle-outline"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col><img src="assets/img1/1.jpg"></ion-col>
+      <ion-col><img src="assets/img1/2.jpg"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>990฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+      <ion-col>890฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col><img src="assets/img1/3.jpg"></ion-col>
+      <ion-col><img src="assets/img1/4.jpg"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>950฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+      <ion-col>850฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col><img src="assets/img1/5.jpg"></ion-col>
+      <ion-col><img src="assets/img1/6.jpg"></ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid [fixed]="true">
+    <ion-row>
+      <ion-col>830฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+      <ion-col>850฿</ion-col>
+      <ion-button size="small" color="warning" expand="block" (click)="presentAlert()">แลกซื้อ</ion-button>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

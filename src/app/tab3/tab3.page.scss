@@ -1,0 +1,22 @@
+// .add-circle{
+//   font-size: 100px;
+// }
+.bank{
+  font-style:oblique;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background:white;
+  margin: 5px;
+}
+// เมือเอาเมาส์ไปชี้จะเป็นสี
+.bank:hover{
+  background: rgb(233, 249, 11);
+}
+.backg{
+  // --background: linear-gradient(180deg, #a2afb4, #2c3232);
+  --background: linear-gradient(180deg, #101010, #386262);
+}
+
